@@ -9,7 +9,7 @@
       "type": "image/png"
     }
   ],
-  "name": "Awesome fox pictures",
-  "short_name": "Foxes",
+  "name": "PWA TST",
+  "short_name": "TST",
   "start_url": "/pwa-examples/a2hs/index.html"
 }
