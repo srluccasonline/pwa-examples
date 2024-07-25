@@ -21,7 +21,7 @@ function mostrarInformacoes() {
 }
 
 // Chama a função mostrarInformacoes após 10 segundos (10000 milissegundos)
-setTimeout(mostrarInformacoes, 5000);
+setTimeout(mostrarInformacoes, 1000);
 
 // Register service worker to control making site work offline
 
