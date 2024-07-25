@@ -11,11 +11,23 @@ setInterval(() => {
   imgElem.src = `images/${randomChoice}.jpg`;
 }, 2000);
 
+function mostrarInformacoes() {
+  // Obtém o hostname e a porta
+  const hostname = location.hostname;
+  const port = location.port;
+
+  // Exibe um alerta com as informações
+  alert(`O hostname é: ${hostname}\n A porta é: ${port}`);
+}
+
+// Chama a função mostrarInformacoes após 10 segundos (10000 milissegundos)
+setTimeout(mostrarInformacoes, 5000);
+
 // Register service worker to control making site work offline
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
-    .register('/pwa-examples/a2hs/sw.js')
+    .register('./sw.js')
     .then(() => { console.log('Service Worker Registered'); });
 }
 
