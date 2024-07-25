@@ -9,7 +9,7 @@
       "type": "image/png"
     }
   ],
-  "name": "PWA TST",
-  "short_name": "TST",
+  "name": "PWA TESTE",
+  "short_name": "TESTE",
   "start_url": "/pwa-examples/a2hs/index.html"
 }
