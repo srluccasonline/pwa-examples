@@ -12,15 +12,14 @@ setInterval(() => {
 }, 2000);
 
 function mostrarInformacoes() {
-  // Obtém o hostname e a porta
-  const hostname = location.hostname;
-  const port = location.port;
-
-  // Exibe um alerta com as informações
-  alert(`O hostname é: ${hostname}\n A porta é: ${port}`);
+  if ('serviceWorker' in navigator) {
+    alert("💚 Tem service WORKER !")
+  } else {
+   alert( "💔📣 NAAAAO TEM SERVICE WORKER !");
+  }
 }
 
-// Chama a função mostrarInformacoes após 10 segundos (10000 milissegundos)
+ 
 setTimeout(mostrarInformacoes, 1000);
 
 // Register service worker to control making site work offline
